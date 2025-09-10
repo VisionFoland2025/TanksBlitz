@@ -188,7 +188,7 @@ AudioSource:
   m_GameObject: {fileID: 1961680747356242655}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1438982620235243366, guid: b7bb022820f0b294cbb51fccc9acec38, type: 2}
   m_audioClip: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   m_Resource: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   m_PlayOnAwake: 1
@@ -286,8 +286,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -1645708129727948180, guid: b7bb022820f0b294cbb51fccc9acec38, type: 2}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3a77defcde1caaa40b6f7502547e0c4e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3a77defcde1caaa40b6f7502547e0c4e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_MaxChargeTime: 0.7
   m_ShotCooldown: 1
   m_MaxDamage: 80
-  m_ExplosionForce: 300
+  m_ExplosionForce: 10
   m_ExplosionRadius: 3
   m_InputUser: {fileID: 0}
 --- !u!114 &3015947667653344569

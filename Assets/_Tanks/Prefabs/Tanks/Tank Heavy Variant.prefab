@@ -84,11 +84,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3015947667653344569, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_Speed
-      value: 6
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3015947667653344569, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_TurnSpeed
-      value: 120
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3015947667653344569, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_PlayerNumber
@@ -196,7 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7574686723420129976, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_ExplosionForce
-      value: 1000
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7574686723420129976, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_ExplosionRadius
