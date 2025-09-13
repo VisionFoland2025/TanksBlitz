@@ -92,7 +92,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3015947667653344569, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_PlayerNumber
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3015947667653344569, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_IsComputerControlled
@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7574686723420129976, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_MaxDamage
-      value: 100
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7574686723420129976, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_ShotCooldown
@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8622464747780569017, guid: cbb9b115eb4afca44a56fcd98d5adc30, type: 3}
       propertyPath: m_StartingHealth
-      value: 300
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

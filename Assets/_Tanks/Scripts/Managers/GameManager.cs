@@ -106,6 +106,7 @@ namespace Tanks.Complete
             m_TankData = playerData;
             m_PlayerCount = m_TankData.Length;
             ChangeGameState(GameState.Game);
+      
         }
 
 
@@ -125,7 +126,16 @@ namespace Tanks.Complete
                 //will re-enable this if needed when the game start)
                 var mov = m_SpawnPoints[i].m_Instance.GetComponent<TankMovement>();
                 mov.m_IsComputerControlled = false;
-                
+
+                if (i == 0)
+                {
+                    UpgradeManager upgradeUI = FindFirstObjectByType<UpgradeManager>();
+                    if (upgradeUI != null)
+                    {
+                        upgradeUI.SetPlayerTank(mov);
+                    }
+                }
+
                 m_SpawnPoints[i].m_PlayerNumber = i + 1;
                 m_SpawnPoints[i].ControlIndex = playerData.ControlIndex;
                 m_SpawnPoints[i].m_PlayerColor = playerData.TankColor;
