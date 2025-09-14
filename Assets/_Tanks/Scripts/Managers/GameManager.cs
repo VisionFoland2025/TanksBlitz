@@ -127,7 +127,7 @@ namespace Tanks.Complete
                 var mov = m_SpawnPoints[i].m_Instance.GetComponent<TankMovement>();
                 mov.m_IsComputerControlled = false;
 
-                if (i == 0)
+                if (playerData.ControlIndex == 1)
                 {
                     UpgradeManager upgradeUI = FindFirstObjectByType<UpgradeManager>();
                     if (upgradeUI != null)

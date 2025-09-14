@@ -16,13 +16,15 @@ namespace Tanks.Complete
 
         [Header("Start Menu")] 
         public RectTransform m_StartMenuRoot;           // The GameObject root that is parent of the Start Menu
+        
         public Button m_StartButton;                    // The Button that will start the game
 
         [Tooltip("The slot in the UI that can be taken by a player or computer tank")]
         public StartMenuSlot[] m_PlayerSlots;           // The Slots in the Start Menu that display the available tanks and handle players selections
 
         public OnScreenButton m_PauseMenuButton;        // Reference to OnScreenButton that emulate pressing a Gamepad Start button
-        
+
+        [SerializeField] private GameObject m_UpgradePanel;
         private TextMeshProUGUI m_StartButtonText;      // Reference to the Text on the Start Button 
         private int m_SlotUsed = 0;                     // How many slots are currently used, the game need at least 2 to start
 
@@ -74,6 +76,10 @@ namespace Tanks.Complete
                 //force the button to be on top of everything so it can be clicked no matter what other screen is shown 
                 rectTransform.SetAsLastSibling();
             }
+
+            //Upgrade panel
+            if (m_UpgradePanel != null)
+                m_UpgradePanel.SetActive(false);
 
             // We use an array because the code was originally written to have any number of prefabs and player, but
             // this was fixed to always 4 tanks during development, so to avoid rewriting the code for static number,
@@ -189,6 +195,9 @@ namespace Tanks.Complete
         {
             // When starting the game, we disable the Start Menu
             m_StartMenuRoot.gameObject.SetActive(false);
+
+            if (m_UpgradePanel != null)
+                m_UpgradePanel.SetActive(true);
 
             // PlayerData is a structure that allow to pass info between the menu and the GameManager
             List<GameManager.PlayerData> playerData = new List<GameManager.PlayerData>();
